@@ -16,5 +16,7 @@
 @property IBOutlet NSTextField *songLabel;
 @property IBOutlet NSTextField *artistLabel;
 @property IBOutlet NSImageView *albumArt;
+@property IBOutlet NSView *controlsView;
+@property IBOutlet NSView *songInfoView;
 @end
 
