@@ -12,7 +12,7 @@
 @synthesize panelController = _panelController;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    // Insert code here to initiayize your application
     self.menuBarController = [[MenuBarController alloc] init];
     
 }
