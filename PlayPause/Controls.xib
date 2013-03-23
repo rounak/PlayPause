@@ -59,6 +59,10 @@
 							<reference key="NSControlView" ref="841771415"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">134</int>
+							<object class="NSCustomResource" key="NSNormalImage" id="661253397">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">Status</string>
+							</object>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -84,6 +88,7 @@
 							<reference key="NSControlView" ref="431200286"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">134</int>
+							<reference key="NSNormalImage" ref="661253397"/>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -109,6 +114,7 @@
 							<reference key="NSControlView" ref="92652489"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">134</int>
+							<reference key="NSNormalImage" ref="661253397"/>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -613,6 +619,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="NS.key.0">Status</string>
+			<string key="NS.object.0">{22, 18}</string>
+		</object>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 	</data>
 </archive>
