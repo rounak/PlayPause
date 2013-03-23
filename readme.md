@@ -1,1 +1,1 @@
-A simple menubar Mac app to control iTunes
+A simple menubar Mac app to control iTunes.
