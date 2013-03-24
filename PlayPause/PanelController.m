@@ -10,6 +10,9 @@
 #import "iTunes.h"
 
 @interface PanelController ()
+{
+    NSTrackingArea *trackingArea;
+}
 @property iTunesApplication *iTunesApp;
 @end
 
@@ -42,11 +45,24 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+    NSView *contentView = self.window.contentView;
+   
     [self.window.contentView addSubview:self.songInfoView];
+    trackingArea = [[NSTrackingArea alloc] initWithRect:contentView.bounds options:(NSTrackingMouseEnteredAndExited | NSTrackingActiveInActiveApp) owner:self userInfo:nil];
+    [contentView addTrackingArea:trackingArea];
   
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
+- (void)mouseEntered:(NSEvent *)theEvent {
+    [self.songInfoView removeFromSuperview];
+    [self.window.contentView addSubview:self.controlsView];
+}
+- (void)mouseExited:(NSEvent *)theEvent {
+    [self.controlsView removeFromSuperview];
+    [self.window.contentView addSubview:self.songInfoView];
+    //NSLog(@"Mouse left");
+}
 -(void)awakeFromNib
 {
     NSLog(@"Awakre form nib called");
