@@ -38,7 +38,10 @@
             [_iTunesApp run];
         }
     }
-    
+    [[NSDistributedNotificationCenter defaultCenter] addObserver:self
+                                                        selector:@selector(updateSongInfo)
+                                                            name:@"com.apple.iTunes.playerInfo"
+                                                          object:@"com.apple.iTunes.player"];
     return self;
 }
 
@@ -100,6 +103,7 @@
     {
         [self.albumArt setImage:[NSImage imageNamed:@"Status.png"]];
     }
+    NSLog(@"Updated lables");
 }
 
 -(void)setActivePanel:(BOOL)passedValue
