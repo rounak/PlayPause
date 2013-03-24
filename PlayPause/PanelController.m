@@ -18,9 +18,14 @@
 @synthesize iTunesApp = _iTunesApp;
 @synthesize songLabel = _songLabel;
 @synthesize albumArt = _albumArt;
+@synthesize songInfoView = _songInfoView;
+@synthesize controlsView = _controlsView;
+
 - (id)init
 {
     self = [super initWithWindowNibName:@"Panel"];
+    [NSBundle loadNibNamed:@"Controls" owner:self];
+    [NSBundle loadNibNamed:@"SongInfo" owner:self];
     if (self) {
         // Initialization code here.
         _hasActivePanel = NO;
@@ -37,6 +42,7 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+    [self.window.contentView addSubview:self.songInfoView];
   
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
@@ -68,8 +74,8 @@
 {
     //NSLog(@"This %@",[self.iTunesApp currentTrack].name);
     [self.songLabel setStringValue:[self.iTunesApp currentTrack].name];
+    NSLog(@"%@",self.songInfoView);
     [self.artistLabel setStringValue:[self.iTunesApp currentTrack].artist];
-    NSLog(@"%@",[[self.iTunesApp currentTrack].artworks objectAtIndex:0]);
     iTunesArtwork *currentArtwork = [[self.iTunesApp currentTrack].artworks objectAtIndex:0];
     if (currentArtwork) {
         [self.albumArt setImage:currentArtwork.data];
@@ -78,8 +84,6 @@
     {
         [self.albumArt setImage:[NSImage imageNamed:@"Status.png"]];
     }
-    //[self.albumArt setImage:[NSImage imageNamed:@"Status.png"]];
-    
 }
 
 -(void)setActivePanel:(BOOL)passedValue
