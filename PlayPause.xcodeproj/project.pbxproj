@@ -21,6 +21,7 @@
 		12E6B63516A72D8E00D176FD /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6B63216A72D8E00D176FD /* PanelController.m */; };
 		12E6B63616A72D8E00D176FD /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63316A72D8E00D176FD /* Panel.xib */; };
 		12E6B63816A73ED700D176FD /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63716A73AC500D176FD /* StatusHighlighted.png */; };
+		BF1FC9531700BDF200C9C2FF /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1FC9521700BDF200C9C2FF /* next.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		12E6B63216A72D8E00D176FD /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
 		12E6B63316A72D8E00D176FD /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
 		12E6B63716A73AC500D176FD /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+		BF1FC9521700BDF200C9C2FF /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = ../../../Desktop/next.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				12E6B63716A73AC500D176FD /* StatusHighlighted.png */,
 				1249DF0C164AE95100B88147 /* PlayPause-Info.plist */,
 				1249DF0D164AE95100B88147 /* InfoPlist.strings */,
+				BF1FC9521700BDF200C9C2FF /* next.png */,
 				1249DF10164AE95100B88147 /* main.m */,
 				1249DF12164AE95100B88147 /* PlayPause-Prefix.pch */,
 				1249DF13164AE95100B88147 /* Credits.rtf */,
@@ -192,6 +195,7 @@
 				12E6B63616A72D8E00D176FD /* Panel.xib in Resources */,
 				127FA29016FDDEE90036993E /* Controls.xib in Resources */,
 				127FA29216FDDEF50036993E /* SongInfo.xib in Resources */,
+				BF1FC9531700BDF200C9C2FF /* next.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
