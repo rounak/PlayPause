@@ -15,13 +15,13 @@
 		1249DF18164AE95100B88147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249DF17164AE95100B88147 /* AppDelegate.m */; };
 		1249DF1B164AE95200B88147 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1249DF19164AE95200B88147 /* MainMenu.xib */; };
 		1249DF2A164AFAB400B88147 /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 1249DF29164AFAB400B88147 /* Status.png */; };
+		12529F881700CDD100C0CF85 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 12529F871700CDD100C0CF85 /* next.png */; };
 		127FA29016FDDEE90036993E /* Controls.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127FA28F16FDDEE90036993E /* Controls.xib */; };
 		127FA29216FDDEF50036993E /* SongInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127FA29116FDDEF50036993E /* SongInfo.xib */; };
 		12E6B63416A72D8E00D176FD /* MenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6B63016A72D8E00D176FD /* MenuBarController.m */; };
 		12E6B63516A72D8E00D176FD /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6B63216A72D8E00D176FD /* PanelController.m */; };
 		12E6B63616A72D8E00D176FD /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63316A72D8E00D176FD /* Panel.xib */; };
 		12E6B63816A73ED700D176FD /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63716A73AC500D176FD /* StatusHighlighted.png */; };
-		BF1FC9531700BDF200C9C2FF /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1FC9521700BDF200C9C2FF /* next.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +41,7 @@
 		1249DF17164AE95100B88147 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1249DF1A164AE95200B88147 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1249DF29164AFAB400B88147 /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
+		12529F871700CDD100C0CF85 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		127FA28F16FDDEE90036993E /* Controls.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Controls.xib; sourceTree = "<group>"; };
 		127FA29116FDDEF50036993E /* SongInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongInfo.xib; sourceTree = "<group>"; };
 		12E6B62F16A72D8E00D176FD /* MenuBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBarController.h; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		12E6B63216A72D8E00D176FD /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
 		12E6B63316A72D8E00D176FD /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
 		12E6B63716A73AC500D176FD /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
-		BF1FC9521700BDF200C9C2FF /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = ../../../Desktop/next.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				12E6B63716A73AC500D176FD /* StatusHighlighted.png */,
 				1249DF0C164AE95100B88147 /* PlayPause-Info.plist */,
 				1249DF0D164AE95100B88147 /* InfoPlist.strings */,
-				BF1FC9521700BDF200C9C2FF /* next.png */,
+				12529F871700CDD100C0CF85 /* next.png */,
 				1249DF10164AE95100B88147 /* main.m */,
 				1249DF12164AE95100B88147 /* PlayPause-Prefix.pch */,
 				1249DF13164AE95100B88147 /* Credits.rtf */,
@@ -195,7 +195,7 @@
 				12E6B63616A72D8E00D176FD /* Panel.xib in Resources */,
 				127FA29016FDDEE90036993E /* Controls.xib in Resources */,
 				127FA29216FDDEF50036993E /* SongInfo.xib in Resources */,
-				BF1FC9531700BDF200C9C2FF /* next.png in Resources */,
+				12529F881700CDD100C0CF85 /* next.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
