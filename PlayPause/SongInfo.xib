@@ -53,9 +53,9 @@
 							<int key="NSCellFlags">68157504</int>
 							<int key="NSCellFlags2">272630784</int>
 							<string key="NSContents">Artist</string>
-							<object class="NSFont" key="NSSupport" id="214323048">
+							<object class="NSFont" key="NSSupport" id="404249349">
 								<string key="NSName">MyriadPro-Regular</string>
-								<double key="NSSize">13</double>
+								<double key="NSSize">14</double>
 								<int key="NSfFlags">16</int>
 							</object>
 							<string key="NSCellIdentifier">_NS:1535</string>
@@ -94,7 +94,7 @@
 							<int key="NSCellFlags">68157504</int>
 							<int key="NSCellFlags2">272630784</int>
 							<string key="NSContents">Song name</string>
-							<reference key="NSSupport" ref="214323048"/>
+							<reference key="NSSupport" ref="404249349"/>
 							<string key="NSCellIdentifier">_NS:1535</string>
 							<reference key="NSControlView" ref="573635501"/>
 							<bool key="NSDrawsBackground">YES</bool>
@@ -258,7 +258,7 @@
 								<float key="scoringTypeFloat">24</float>
 								<int key="contentType">3</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="279457211">
+							<object class="IBNSLayoutConstraint" id="692137687">
 								<reference key="firstItem" ref="573635501"/>
 								<int key="firstAttribute">6</int>
 								<int key="relation">0</int>
@@ -274,7 +274,7 @@
 								<float key="scoringTypeFloat">24</float>
 								<int key="contentType">2</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="926208053">
+							<object class="IBNSLayoutConstraint" id="247955355">
 								<reference key="firstItem" ref="573635501"/>
 								<int key="firstAttribute">5</int>
 								<int key="relation">0</int>
@@ -399,7 +399,7 @@
 								<float key="scoringTypeFloat">9</float>
 								<int key="contentType">1</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="892618489">
+							<object class="IBNSLayoutConstraint" id="341570617">
 								<reference key="firstItem" ref="573635501"/>
 								<int key="firstAttribute">8</int>
 								<int key="relation">0</int>
@@ -428,7 +428,7 @@
 						<reference key="object" ref="788932505"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="758742621"/>
-							<object class="IBNSLayoutConstraint" id="899276711">
+							<object class="IBNSLayoutConstraint" id="416831683">
 								<reference key="firstItem" ref="788932505"/>
 								<int key="firstAttribute">8</int>
 								<int key="relation">0</int>
@@ -479,17 +479,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">35</int>
-						<reference key="object" ref="899276711"/>
+						<reference key="object" ref="416831683"/>
 						<reference key="parent" ref="788932505"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">37</int>
-						<reference key="object" ref="892618489"/>
+						<reference key="object" ref="341570617"/>
 						<reference key="parent" ref="573635501"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">38</int>
-						<reference key="object" ref="926208053"/>
+						<reference key="object" ref="247955355"/>
 						<reference key="parent" ref="1005"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -504,7 +504,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">42</int>
-						<reference key="object" ref="279457211"/>
+						<reference key="object" ref="692137687"/>
 						<reference key="parent" ref="1005"/>
 					</object>
 				</array>
@@ -517,8 +517,8 @@
 					<reference ref="607365130"/>
 					<reference ref="56941802"/>
 					<reference ref="592211515"/>
-					<reference ref="926208053"/>
-					<reference ref="279457211"/>
+					<reference ref="247955355"/>
+					<reference ref="692137687"/>
 					<reference ref="248310768"/>
 					<reference ref="939562386"/>
 					<reference ref="437986215"/>
@@ -529,14 +529,14 @@
 				<real value="0.0" key="1.IBViewIntegration.shadowOffsetHeight"/>
 				<real value="0.0" key="1.IBViewIntegration.shadowOffsetWidth"/>
 				<array class="NSMutableArray" key="10.IBNSViewMetadataConstraints">
-					<reference ref="892618489"/>
+					<reference ref="341570617"/>
 					<reference ref="899430899"/>
 				</array>
 				<boolean value="NO" key="10.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<array class="NSMutableArray" key="14.IBNSViewMetadataConstraints">
-					<reference ref="899276711"/>
+					<reference ref="416831683"/>
 				</array>
 				<boolean value="NO" key="14.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
