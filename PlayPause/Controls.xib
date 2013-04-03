@@ -89,7 +89,7 @@
 							<reference key="NSControlView" ref="431200286"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">130</int>
-							<object class="NSCustomResource" key="NSNormalImage" id="444898486">
+							<object class="NSCustomResource" key="NSNormalImage">
 								<string key="NSClassName">NSImage</string>
 								<string key="NSResourceName">Status</string>
 							</object>
@@ -118,7 +118,10 @@
 							<reference key="NSControlView" ref="92652489"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">130</int>
-							<reference key="NSNormalImage" ref="444898486"/>
+							<object class="NSCustomResource" key="NSNormalImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">prev</string>
+							</object>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -625,7 +628,8 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="Status">{22, 18}</string>
-			<string key="next">{79, 84}</string>
+			<string key="next">{83, 74}</string>
+			<string key="prev">{83, 74}</string>
 		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 	</data>
