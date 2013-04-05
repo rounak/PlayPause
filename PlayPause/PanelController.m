@@ -23,9 +23,17 @@
 @synthesize albumArt = _albumArt;
 @synthesize songInfoView = _songInfoView;
 @synthesize controlsView = _controlsView;
+@synthesize next = _next;
+@synthesize previous = _previous;
+@synthesize play = _play;
+@synthesize pause = _pause;
+@synthesize nextButton = _nextButton;
+@synthesize prevButton = _prevButton;
+@synthesize playPauseButton = _playPauseButton;
 
 - (id)init
 {
+    
     self = [super initWithWindowNibName:@"Panel"];
     [NSBundle loadNibNamed:@"Controls" owner:self];
     [NSBundle loadNibNamed:@"SongInfo" owner:self];
@@ -70,11 +78,43 @@
 {
     NSLog(@"Awakre form nib called");
     
+    //Read images
+    _next = [NSImage imageNamed:@"next.png"];
+    _previous = [NSImage imageNamed:@"prev"];
+    _play = [NSImage imageNamed:@"play.png"];
+    _pause = [NSImage imageNamed:@"pause.png"];
+    
+    if(_next == nil || _previous == nil)
+    {
+        NSLog(@"Image did not intialized");
+    }
+    
+    //Initialize NSButtons with the images    
+    [_nextButton setImage:_next];
+    [_prevButton setImage:_previous];
+    //[_playPauseButton setImage:_play];
+    
+    if([self.iTunesApp playerState] == iTunesEPlSPlaying)
+    {
+        [_playPauseButton setImage:_pause];
+    }
+    else
+    {
+        [_playPauseButton setImage:_play];
+    }
 }
 
 -(IBAction)playToggle:(id)sender
 {
     [self.iTunesApp playpause];
+    if([self.iTunesApp playerState] == iTunesEPlSPlaying)
+    {
+        [_playPauseButton setImage:_pause];
+    }
+    else
+    {
+        [_playPauseButton setImage:_play];
+    }
 }
 -(IBAction)previousTrack:(id)sender
 {

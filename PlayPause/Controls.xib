@@ -60,9 +60,9 @@
 							<reference key="NSControlView" ref="841771415"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">130</int>
-							<object class="NSCustomResource" key="NSNormalImage">
+							<object class="NSCustomResource" key="NSNormalImage" id="578378574">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">next</string>
+								<string key="NSResourceName">NSActionTemplate</string>
 							</object>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
@@ -118,10 +118,7 @@
 							<reference key="NSControlView" ref="92652489"/>
 							<int key="NSButtonFlags">-2033958912</int>
 							<int key="NSButtonFlags2">130</int>
-							<object class="NSCustomResource" key="NSNormalImage">
-								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">prev</string>
-							</object>
+							<reference key="NSNormalImage" ref="578378574"/>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -178,6 +175,30 @@
 						<reference key="destination" ref="431200286"/>
 					</object>
 					<int key="connectionID">41</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">prevButton</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="92652489"/>
+					</object>
+					<int key="connectionID">54</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">playPauseButton</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="431200286"/>
+					</object>
+					<int key="connectionID">55</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">nextButton</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="841771415"/>
+					</object>
+					<int key="connectionID">56</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -571,7 +592,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">53</int>
+			<int key="maxID">56</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -590,6 +611,13 @@
 						<string key="albumArt">NSImageView</string>
 						<string key="artistLabel">NSTextField</string>
 						<string key="controlsView">NSView</string>
+						<string key="next">NSImage</string>
+						<string key="nextButton">NSButton</string>
+						<string key="pause">NSImage</string>
+						<string key="play">NSImage</string>
+						<string key="playPauseButton">NSButton</string>
+						<string key="prevButton">NSButton</string>
+						<string key="previous">NSImage</string>
 						<string key="songInfoView">NSView</string>
 						<string key="songLabel">NSTextField</string>
 					</dictionary>
@@ -605,6 +633,34 @@
 						<object class="IBToOneOutletInfo" key="controlsView">
 							<string key="name">controlsView</string>
 							<string key="candidateClassName">NSView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="next">
+							<string key="name">next</string>
+							<string key="candidateClassName">NSImage</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="nextButton">
+							<string key="name">nextButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="pause">
+							<string key="name">pause</string>
+							<string key="candidateClassName">NSImage</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="play">
+							<string key="name">play</string>
+							<string key="candidateClassName">NSImage</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="playPauseButton">
+							<string key="name">playPauseButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="prevButton">
+							<string key="name">prevButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="previous">
+							<string key="name">previous</string>
+							<string key="candidateClassName">NSImage</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="songInfoView">
 							<string key="name">songInfoView</string>
@@ -627,9 +683,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="NSActionTemplate">{15, 15}</string>
 			<string key="Status">{22, 18}</string>
-			<string key="next">{83, 74}</string>
-			<string key="prev">{83, 74}</string>
 		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 	</data>

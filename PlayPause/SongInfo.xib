@@ -46,7 +46,6 @@
 						<string key="NSFrame">{{80, 12}, {99, 17}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:1535</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="758742621">
@@ -118,7 +117,6 @@
 						<string key="NSFrame">{{17, 9}, {48, 48}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSImageCell" key="NSCell" id="240016245">
@@ -579,10 +577,36 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">PanelController</string>
 					<string key="superclassName">NSWindowController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="nextTrack:">id</string>
+						<string key="playToggle:">id</string>
+						<string key="previousTrack:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="nextTrack:">
+							<string key="name">nextTrack:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="playToggle:">
+							<string key="name">playToggle:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="previousTrack:">
+							<string key="name">previousTrack:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="albumArt">NSImageView</string>
 						<string key="artistLabel">NSTextField</string>
 						<string key="controlsView">NSView</string>
+						<string key="next">NSImage</string>
+						<string key="nextButton">NSButton</string>
+						<string key="pause">NSImage</string>
+						<string key="play">NSImage</string>
+						<string key="playPauseButton">NSButton</string>
+						<string key="prevButton">NSButton</string>
+						<string key="previous">NSImage</string>
 						<string key="songInfoView">NSView</string>
 						<string key="songLabel">NSTextField</string>
 					</dictionary>
@@ -598,6 +622,34 @@
 						<object class="IBToOneOutletInfo" key="controlsView">
 							<string key="name">controlsView</string>
 							<string key="candidateClassName">NSView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="next">
+							<string key="name">next</string>
+							<string key="candidateClassName">NSImage</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="nextButton">
+							<string key="name">nextButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="pause">
+							<string key="name">pause</string>
+							<string key="candidateClassName">NSImage</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="play">
+							<string key="name">play</string>
+							<string key="candidateClassName">NSImage</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="playPauseButton">
+							<string key="name">playPauseButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="prevButton">
+							<string key="name">prevButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="previous">
+							<string key="name">previous</string>
+							<string key="candidateClassName">NSImage</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="songInfoView">
 							<string key="name">songInfoView</string>

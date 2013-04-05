@@ -23,6 +23,8 @@
 		12E6B63616A72D8E00D176FD /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63316A72D8E00D176FD /* Panel.xib */; };
 		12E6B63816A73ED700D176FD /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63716A73AC500D176FD /* StatusHighlighted.png */; };
 		BF613F59170CA9D000C2E1DB /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = BF613F57170CA9D000C2E1DB /* prev.png */; };
+		BFED9011170F24BB006E4ED5 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BFED900F170F24BB006E4ED5 /* pause.png */; };
+		BFED9012170F24BB006E4ED5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = BFED9010170F24BB006E4ED5 /* play.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		12E6B63316A72D8E00D176FD /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
 		12E6B63716A73AC500D176FD /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
 		BF613F57170CA9D000C2E1DB /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
+		BFED900F170F24BB006E4ED5 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		BFED9010170F24BB006E4ED5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 				1249DF29164AFAB400B88147 /* Status.png */,
 				12E6B63716A73AC500D176FD /* StatusHighlighted.png */,
 				1249DF0C164AE95100B88147 /* PlayPause-Info.plist */,
+				BFED900F170F24BB006E4ED5 /* pause.png */,
+				BFED9010170F24BB006E4ED5 /* play.png */,
 				1249DF0D164AE95100B88147 /* InfoPlist.strings */,
 				12529F871700CDD100C0CF85 /* next.png */,
 				1249DF10164AE95100B88147 /* main.m */,
@@ -200,6 +206,8 @@
 				127FA29216FDDEF50036993E /* SongInfo.xib in Resources */,
 				12529F881700CDD100C0CF85 /* next.png in Resources */,
 				BF613F59170CA9D000C2E1DB /* prev.png in Resources */,
+				BFED9011170F24BB006E4ED5 /* pause.png in Resources */,
+				BFED9012170F24BB006E4ED5 /* play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

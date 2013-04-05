@@ -18,5 +18,12 @@
 @property IBOutlet NSImageView *albumArt;
 @property IBOutlet NSView *controlsView;
 @property IBOutlet NSView *songInfoView;
+@property IBOutlet NSImage *next;
+@property IBOutlet NSImage *previous;
+@property IBOutlet NSImage *play;
+@property IBOutlet NSImage *pause;
+@property IBOutlet NSButton *nextButton;
+@property IBOutlet NSButton *prevButton;
+@property IBOutlet NSButton *playPauseButton;
 @end
 
