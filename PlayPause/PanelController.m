@@ -92,7 +92,6 @@
     //Initialize NSButtons with the images    
     [_nextButton setImage:_nextImage];
     [_prevButton setImage:_previousImage];
-    //[_playPauseButton setImage:_play];
     
     if([self.iTunesApp playerState] == iTunesEPlSPlaying)
     {
