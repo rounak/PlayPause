@@ -33,7 +33,7 @@
 
 - (id)init
 {
-    
+
     self = [super initWithWindowNibName:@"Panel"];
     [NSBundle loadNibNamed:@"Controls" owner:self];
     [NSBundle loadNibNamed:@"SongInfo" owner:self];
@@ -55,6 +55,7 @@
 
 - (void)windowDidLoad
 {
+
     [super windowDidLoad];
     NSView *contentView = self.window.contentView;
    
@@ -130,7 +131,9 @@
 }
 -(void)updateSongInfo
 {
-    //NSLog(@"This %@",[self.iTunesApp currentTrack].name);
+    //Bring window to the front each time it is activated
+    [NSApp orderFront:nil];
+    
     [self.songLabel setStringValue:[self.iTunesApp currentTrack].name];
     NSLog(@"%@",self.songInfoView);
     [self.artistLabel setStringValue:[self.iTunesApp currentTrack].artist];
