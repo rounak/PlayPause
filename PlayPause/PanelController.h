@@ -25,5 +25,10 @@
 @property IBOutlet NSButton *nextButton;
 @property IBOutlet NSButton *prevButton;
 @property IBOutlet NSButton *playPauseButton;
+
+-(IBAction)nextTrack:(id)sender;
+-(IBAction)previousTrack:(id)sender;
+-(IBAction)playToggle:(id)sender;
+
 @end
 
