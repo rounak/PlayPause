@@ -23,10 +23,10 @@
 @synthesize albumArt = _albumArt;
 @synthesize songInfoView = _songInfoView;
 @synthesize controlsView = _controlsView;
-@synthesize next = _next;
-@synthesize previous = _previous;
-@synthesize play = _play;
-@synthesize pause = _pause;
+@synthesize nextImage = _nextImage;
+@synthesize previousImage = _previousImage;
+@synthesize playImage = _playImage;
+@synthesize pauseImage = _pauseImage;
 @synthesize nextButton = _nextButton;
 @synthesize prevButton = _prevButton;
 @synthesize playPauseButton = _playPauseButton;
@@ -79,28 +79,28 @@
     NSLog(@"Awakre form nib called");
     
     //Read images
-    _next = [NSImage imageNamed:@"next.png"];
-    _previous = [NSImage imageNamed:@"prev"];
-    _play = [NSImage imageNamed:@"play.png"];
-    _pause = [NSImage imageNamed:@"pause.png"];
+    self.nextImage = [NSImage imageNamed:@"next.png"];
+    self.previousImage = [NSImage imageNamed:@"prev"];
+    self.playImage = [NSImage imageNamed:@"play.png"];
+    self.pauseImage = [NSImage imageNamed:@"pause.png"];
     
-    if(_next == nil || _previous == nil)
+    if(self.nextImage == nil || self.previousImage == nil)
     {
         NSLog(@"Image did not intialized");
     }
     
     //Initialize NSButtons with the images    
-    [_nextButton setImage:_next];
-    [_prevButton setImage:_previous];
+    [_nextButton setImage:_nextImage];
+    [_prevButton setImage:_previousImage];
     //[_playPauseButton setImage:_play];
     
     if([self.iTunesApp playerState] == iTunesEPlSPlaying)
     {
-        [_playPauseButton setImage:_pause];
+        [_playPauseButton setImage:_pauseImage];
     }
     else
     {
-        [_playPauseButton setImage:_play];
+        [_playPauseButton setImage:_playImage];
     }
 }
 
@@ -109,11 +109,11 @@
     [self.iTunesApp playpause];
     if([self.iTunesApp playerState] == iTunesEPlSPlaying)
     {
-        [_playPauseButton setImage:_pause];
+        [_playPauseButton setImage:_pauseImage];
     }
     else
     {
-        [_playPauseButton setImage:_play];
+        [_playPauseButton setImage:_playImage];
     }
 }
 -(IBAction)previousTrack:(id)sender
