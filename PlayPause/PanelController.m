@@ -132,7 +132,6 @@
 -(void)updateSongInfo
 {
     //Bring window to the front each time it is activated
-    [NSApp orderFront:nil];
     
     [self.songLabel setStringValue:[self.iTunesApp currentTrack].name];
     NSLog(@"%@",self.songInfoView);
