@@ -8,20 +8,18 @@
 
 #import "AppDelegate.h"
 @implementation AppDelegate
-@synthesize menuBarController = _menuBarController;
 @synthesize panelController = _panelController;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initiayize your application
-    self.menuBarController = [[MenuBarController alloc] init];
-    
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:24.0];
+    self.statusItem.action = @selector(togglePanel:);
+    self.statusItem.image = [NSImage imageNamed:@"Status"];
 }
 
 - (PanelController*)panelController
 {
-    //NSLog(@"Called panelControler accessor");
     if (_panelController == nil) {
-        //NSLog(@"Allocing panelcontrolelr");
         _panelController = [[PanelController alloc] init];
     }
     return _panelController;
@@ -29,8 +27,7 @@
 
 - (IBAction)togglePanel:(id)sender
 {
-    NSLog(@"Toggle");
-    self.menuBarController.visible = !self.menuBarController.visible;
+//    NSLog(@"Toggle");
     self.panelController.hasActivePanel = !self.panelController.hasActivePanel;
 }
 

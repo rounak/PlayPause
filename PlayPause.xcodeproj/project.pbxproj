@@ -17,14 +17,15 @@
 		1249DF2A164AFAB400B88147 /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 1249DF29164AFAB400B88147 /* Status.png */; };
 		12529F881700CDD100C0CF85 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 12529F871700CDD100C0CF85 /* next.png */; };
 		127FA29016FDDEE90036993E /* Controls.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127FA28F16FDDEE90036993E /* Controls.xib */; };
-		127FA29216FDDEF50036993E /* SongInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 127FA29116FDDEF50036993E /* SongInfo.xib */; };
-		12E6B63416A72D8E00D176FD /* MenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6B63016A72D8E00D176FD /* MenuBarController.m */; };
 		12E6B63516A72D8E00D176FD /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6B63216A72D8E00D176FD /* PanelController.m */; };
 		12E6B63616A72D8E00D176FD /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63316A72D8E00D176FD /* Panel.xib */; };
 		12E6B63816A73ED700D176FD /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63716A73AC500D176FD /* StatusHighlighted.png */; };
 		BF613F59170CA9D000C2E1DB /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = BF613F57170CA9D000C2E1DB /* prev.png */; };
 		BFED9011170F24BB006E4ED5 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BFED900F170F24BB006E4ED5 /* pause.png */; };
 		BFED9012170F24BB006E4ED5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = BFED9010170F24BB006E4ED5 /* play.png */; };
+		F91ECC95174C14AF00105177 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91ECC94174C14AF00105177 /* QuartzCore.framework */; };
+		F97A50B6174B94DF00FE4EFF /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = F97A50B5174B94DF00FE4EFF /* Panel.m */; };
+		F97A50B9174BC22B00FE4EFF /* SongInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97A50B8174BC22B00FE4EFF /* SongInfo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,9 +47,6 @@
 		1249DF29164AFAB400B88147 /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
 		12529F871700CDD100C0CF85 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		127FA28F16FDDEE90036993E /* Controls.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Controls.xib; sourceTree = "<group>"; };
-		127FA29116FDDEF50036993E /* SongInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongInfo.xib; sourceTree = "<group>"; };
-		12E6B62F16A72D8E00D176FD /* MenuBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBarController.h; sourceTree = "<group>"; };
-		12E6B63016A72D8E00D176FD /* MenuBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBarController.m; sourceTree = "<group>"; };
 		12E6B63116A72D8E00D176FD /* PanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelController.h; sourceTree = "<group>"; };
 		12E6B63216A72D8E00D176FD /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
 		12E6B63316A72D8E00D176FD /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
@@ -56,6 +54,10 @@
 		BF613F57170CA9D000C2E1DB /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prev.png; sourceTree = "<group>"; };
 		BFED900F170F24BB006E4ED5 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		BFED9010170F24BB006E4ED5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		F91ECC94174C14AF00105177 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F97A50B4174B94DF00FE4EFF /* Panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panel.h; sourceTree = "<group>"; };
+		F97A50B5174B94DF00FE4EFF /* Panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
+		F97A50B8174BC22B00FE4EFF /* SongInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongInfo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91ECC95174C14AF00105177 /* QuartzCore.framework in Frameworks */,
 				12321C1716558B6400A22459 /* ScriptingBridge.framework in Frameworks */,
 				1249DF05164AE95100B88147 /* Cocoa.framework in Frameworks */,
 			);
@@ -91,6 +94,7 @@
 		1249DF03164AE95100B88147 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F91ECC94174C14AF00105177 /* QuartzCore.framework */,
 				12321C1616558B6400A22459 /* ScriptingBridge.framework */,
 				1249DF04164AE95100B88147 /* Cocoa.framework */,
 				1249DF06164AE95100B88147 /* Other Frameworks */,
@@ -111,17 +115,13 @@
 		1249DF0A164AE95100B88147 /* PlayPause */ = {
 			isa = PBXGroup;
 			children = (
+				F97A50B7174B962900FE4EFF /* XIBs */,
 				1249DF16164AE95100B88147 /* AppDelegate.h */,
 				1249DF17164AE95100B88147 /* AppDelegate.m */,
-				1249DF19164AE95200B88147 /* MainMenu.xib */,
-				12321C14165582D200A22459 /* iTunes.h */,
-				12E6B62F16A72D8E00D176FD /* MenuBarController.h */,
-				12E6B63016A72D8E00D176FD /* MenuBarController.m */,
 				12E6B63116A72D8E00D176FD /* PanelController.h */,
 				12E6B63216A72D8E00D176FD /* PanelController.m */,
-				12E6B63316A72D8E00D176FD /* Panel.xib */,
-				127FA28F16FDDEE90036993E /* Controls.xib */,
-				127FA29116FDDEF50036993E /* SongInfo.xib */,
+				F97A50B4174B94DF00FE4EFF /* Panel.h */,
+				F97A50B5174B94DF00FE4EFF /* Panel.m */,
 				1249DF0B164AE95100B88147 /* Supporting Files */,
 			);
 			path = PlayPause;
@@ -130,6 +130,7 @@
 		1249DF0B164AE95100B88147 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12321C14165582D200A22459 /* iTunes.h */,
 				BF613F57170CA9D000C2E1DB /* prev.png */,
 				1249DF29164AFAB400B88147 /* Status.png */,
 				12E6B63716A73AC500D176FD /* StatusHighlighted.png */,
@@ -143,6 +144,17 @@
 				1249DF13164AE95100B88147 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F97A50B7174B962900FE4EFF /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				12E6B63316A72D8E00D176FD /* Panel.xib */,
+				F97A50B8174BC22B00FE4EFF /* SongInfo.xib */,
+				127FA28F16FDDEE90036993E /* Controls.xib */,
+				1249DF19164AE95200B88147 /* MainMenu.xib */,
+			);
+			name = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,11 +215,11 @@
 				1249DF2A164AFAB400B88147 /* Status.png in Resources */,
 				12E6B63616A72D8E00D176FD /* Panel.xib in Resources */,
 				127FA29016FDDEE90036993E /* Controls.xib in Resources */,
-				127FA29216FDDEF50036993E /* SongInfo.xib in Resources */,
 				12529F881700CDD100C0CF85 /* next.png in Resources */,
 				BF613F59170CA9D000C2E1DB /* prev.png in Resources */,
 				BFED9011170F24BB006E4ED5 /* pause.png in Resources */,
 				BFED9012170F24BB006E4ED5 /* play.png in Resources */,
+				F97A50B9174BC22B00FE4EFF /* SongInfo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +232,8 @@
 			files = (
 				1249DF11164AE95100B88147 /* main.m in Sources */,
 				1249DF18164AE95100B88147 /* AppDelegate.m in Sources */,
-				12E6B63416A72D8E00D176FD /* MenuBarController.m in Sources */,
 				12E6B63516A72D8E00D176FD /* PanelController.m in Sources */,
+				F97A50B6174B94DF00FE4EFF /* Panel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

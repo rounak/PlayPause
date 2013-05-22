@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface PanelController : NSWindowController
+@interface PanelController : NSWindowController <NSWindowDelegate>
 
 
 @property (getter = hasActivePanel, setter = setActivePanel:) BOOL hasActivePanel;

@@ -7,12 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MenuBarController.h"
 #import "PanelController.h"
 
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-@property MenuBarController *menuBarController;
+@property NSStatusItem *statusItem;
 @property (readonly) PanelController *panelController;
 - (IBAction)togglePanel:(id)sender;
 
