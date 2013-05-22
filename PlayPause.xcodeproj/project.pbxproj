@@ -24,6 +24,7 @@
 		BFED9011170F24BB006E4ED5 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BFED900F170F24BB006E4ED5 /* pause.png */; };
 		BFED9012170F24BB006E4ED5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = BFED9010170F24BB006E4ED5 /* play.png */; };
 		F91ECC95174C14AF00105177 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91ECC94174C14AF00105177 /* QuartzCore.framework */; };
+		F971EFB3174CECD8008846DC /* Status@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F971EFB2174CEC94008846DC /* Status@2x.png */; };
 		F97A50B6174B94DF00FE4EFF /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = F97A50B5174B94DF00FE4EFF /* Panel.m */; };
 		F97A50B9174BC22B00FE4EFF /* SongInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97A50B8174BC22B00FE4EFF /* SongInfo.xib */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		BFED900F170F24BB006E4ED5 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		BFED9010170F24BB006E4ED5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		F91ECC94174C14AF00105177 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F971EFB2174CEC94008846DC /* Status@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Status@2x.png"; sourceTree = "<group>"; };
 		F97A50B4174B94DF00FE4EFF /* Panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panel.h; sourceTree = "<group>"; };
 		F97A50B5174B94DF00FE4EFF /* Panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
 		F97A50B8174BC22B00FE4EFF /* SongInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongInfo.xib; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				12321C14165582D200A22459 /* iTunes.h */,
 				BF613F57170CA9D000C2E1DB /* prev.png */,
 				1249DF29164AFAB400B88147 /* Status.png */,
+				F971EFB2174CEC94008846DC /* Status@2x.png */,
 				12E6B63716A73AC500D176FD /* StatusHighlighted.png */,
 				1249DF0C164AE95100B88147 /* PlayPause-Info.plist */,
 				BFED900F170F24BB006E4ED5 /* pause.png */,
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F971EFB3174CECD8008846DC /* Status@2x.png in Resources */,
 				12E6B63816A73ED700D176FD /* StatusHighlighted.png in Resources */,
 				1249DF0F164AE95100B88147 /* InfoPlist.strings in Resources */,
 				1249DF15164AE95100B88147 /* Credits.rtf in Resources */,
