@@ -63,7 +63,7 @@
     [self.window.contentView addSubview:_albumArt];
     
     NSPanel *panel = (id)self.window;
-    [panel setAcceptsMouseMovedEvents:YES];
+    [panel setAcceptsMouseMovedEvents:NO];
     [panel setLevel:NSPopUpMenuWindowLevel];
     NSRect locationOfStatusItem = [[[NSApp currentEvent] window] frame];
     NSRect panelRect = [self.window frame];
@@ -92,7 +92,7 @@
 -(void)awakeFromNib
 {
 //    NSLog(@"Awake form nib called");
-    
+    [super awakeFromNib];
     if (self.controlsView && controlBool == 0) {
         controlBool = 1;
         self.nextImage = [NSImage imageNamed:@"next.png"];
