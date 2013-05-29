@@ -78,16 +78,24 @@
     [contentView addTrackingArea:trackingArea];
 }
 
-- (void)mouseEntered:(NSEvent *)theEvent {
-    
+- (void)showHover
+{
     [self.controlsView setFrameOrigin:NSPointFromCGPoint(CGPointMake(0.0, 0.0))];
     [self.songInfoView setFrameOrigin:NSPointFromCGPoint(CGPointMake(0.0, self.window.frame.size.height - self.songInfoView.frame.size.height))];
     [self.window.contentView addSubview:self.controlsView];
     [self.window.contentView addSubview:self.songInfoView];
 }
-- (void)mouseExited:(NSEvent *)theEvent {
+- (void)hideHover
+{
     [self.songInfoView removeFromSuperview];
     [self.controlsView removeFromSuperview];
+}
+
+- (void)mouseEntered:(NSEvent *)theEvent {
+    [self showHover];
+}
+- (void)mouseExited:(NSEvent *)theEvent {
+    [self hideHover];
 }
 -(void)awakeFromNib
 {
@@ -208,7 +216,7 @@
 
 - (void)windowDidBecomeMain:(NSNotification *)notification
 {
-    NSLog(@"NONONONONONO NO!");
+    NSLog(@"The impossible happened, window became main");
 }
 
 @end

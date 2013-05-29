@@ -29,6 +29,6 @@
 -(IBAction)nextTrack:(id)sender;
 -(IBAction)previousTrack:(id)sender;
 -(IBAction)playToggle:(id)sender;
-
+- (id)init;
 @end
 
