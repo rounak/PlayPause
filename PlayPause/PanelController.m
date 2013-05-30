@@ -109,14 +109,7 @@
         self.pauseImage = [NSImage imageNamed:@"pause.png"];
         self.controlsView.layer.backgroundColor = CGColorCreateGenericRGB(0.0, 0.0, 0.0, 0.31);
         
-        if([self.iTunesApp playerState] == iTunesEPlSPlaying)
-        {
-            [_playPauseButton setImage:_pauseImage];
-        }
-        else
-        {
-            [_playPauseButton setImage:_playImage];
-        }
+        [self updatePlayPauseIcon];
         [_nextButton setImage:_nextImage];
         [_prevButton setImage:_previousImage];
     }
@@ -131,9 +124,8 @@
     }
 }
 
--(IBAction)playToggle:(id)sender
+-(void)updatePlayPauseIcon
 {
-    [self.iTunesApp playpause];
     if([self.iTunesApp playerState] == iTunesEPlSPlaying)
     {
         [_playPauseButton setImage:_pauseImage];
@@ -142,6 +134,12 @@
     {
         [_playPauseButton setImage:_playImage];
     }
+}
+
+-(IBAction)playToggle:(id)sender
+{
+    [self.iTunesApp playpause];
+    [self updatePlayPauseIcon];
 }
 -(IBAction)previousTrack:(id)sender
 {
@@ -163,12 +161,15 @@
     [self.artistLabel setStringValue:[self.iTunesApp currentTrack].artist];
     iTunesArtwork *currentArtwork = [[self.iTunesApp currentTrack].artworks objectAtIndex:0];
     if (currentArtwork) {
+        self.albumArt.image = nil;
         [self.albumArt setImage:currentArtwork.data];
     }
     else
     {
+        self.albumArt.image = nil;
         [self.albumArt setImage:[NSImage imageNamed:@"Status"]];
     }
+    [self updatePlayPauseIcon];
 //    NSLog(@"Updated lables");
 }
 
@@ -188,6 +189,8 @@
         _hasActivePanel = passedValue;
         [self updateSongInfo];
     }
+    NSLog(@"Is window main?:%@",[self.window isMainWindow] ? @"YES":@"NO");
+    NSLog(@"Is window key?:%@",[self.window isKeyWindow] ? @"YES":@"NO");
 }
 
 
@@ -205,12 +208,12 @@
     {
         self.hasActivePanel = NO;
     }
-    NSLog(@"Window is NOT key");
+    NSLog(@"Window resigned key");
 }
 
 - (void)windowDidBecomeKey:(NSNotification *)notification
 {
-    NSLog(@"Window is key");
+    NSLog(@"Window became key");
 }
 
 
