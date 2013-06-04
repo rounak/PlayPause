@@ -92,7 +92,7 @@
 - (void)showHover
 {
     [self.controlsView setFrameOrigin:NSPointFromCGPoint(CGPointMake(0.0, 0.0))];
-    [self.songInfoView setFrameOrigin:NSPointFromCGPoint(CGPointMake(0.0, self.window.frame.size.height - self.songInfoView.frame.size.height))];
+    [self.songInfoView setFrameOrigin:NSPointFromCGPoint(CGPointMake(0.0, self.window.frame.size.height - self.songInfoView.frame.size.height - ARROW_HEIGHT))];
     [self.window.contentView addSubview:self.controlsView];
     [self.window.contentView addSubview:self.songInfoView];
 }
