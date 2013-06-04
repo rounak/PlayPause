@@ -62,7 +62,7 @@
     NSLog(@"In window did load");
     NSView *contentView = self.window.contentView;
     
-    _albumArt = [[NSImageView alloc] initWithFrame:CGRectMake(contentView.frame.origin.x, contentView.frame.origin.y, contentView.frame.size.width - ARROW_HEIGHT, contentView.frame.size.height - ARROW_HEIGHT)];
+    _albumArt = [[NSImageView alloc] initWithFrame:CGRectMake(contentView.frame.origin.x, contentView.frame.origin.y, contentView.frame.size.width, contentView.frame.size.height - ARROW_HEIGHT)];
     [self.window.contentView addSubview:_albumArt];
     
     NSPanel *panel = (id)self.window;

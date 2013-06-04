@@ -35,7 +35,7 @@
 			<object class="NSWindowTemplate" id="1005">
 				<int key="NSWindowStyleMask">16</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 240}, {256, 256}}</string>
+				<string key="NSWindowRect">{{196, 240}, {256, 264}}</string>
 				<int key="NSWTFlags">1618478080</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">Panel</string>
@@ -45,11 +45,12 @@
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">8448</int>
 					<array class="NSMutableArray" key="NSSubviews"/>
-					<string key="NSFrameSize">{256, 256}</string>
+					<string key="NSFrameSize">{256, 264}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
+					<reference key="NSNextKeyView"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1280, 800}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">NO</bool>
 			</object>
