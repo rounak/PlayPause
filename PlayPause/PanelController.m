@@ -10,6 +10,7 @@
 #import "iTunes.h"
 #import "Background.h"
 #import <QuartzCore/QuartzCore.h>
+#define BORDER_WIDTH 8
 
 @interface PanelController ()
 {
@@ -62,7 +63,7 @@
     NSLog(@"In window did load");
     NSView *contentView = self.window.contentView;
     
-    _albumArt = [[NSImageView alloc] initWithFrame:CGRectMake(contentView.frame.origin.x, contentView.frame.origin.y, contentView.frame.size.width, contentView.frame.size.height - ARROW_HEIGHT)];
+    _albumArt = [[NSImageView alloc] initWithFrame:CGRectMake(contentView.frame.origin.x + BORDER_WIDTH, contentView.frame.origin.y + BORDER_WIDTH, contentView.frame.size.width - (2*BORDER_WIDTH), contentView.frame.size.height - ARROW_HEIGHT - (2*BORDER_WIDTH))];
     [self.window.contentView addSubview:_albumArt];
     
     NSPanel *panel = (id)self.window;
