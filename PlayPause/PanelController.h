@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Background.h"
 
 
 @interface PanelController : NSWindowController <NSWindowDelegate>
+{
+    __unsafe_unretained Background *_background;
+}
 
 
 @property (getter = hasActivePanel, setter = setActivePanel:) BOOL hasActivePanel;
@@ -25,6 +29,7 @@
 @property IBOutlet NSButton *nextButton;
 @property IBOutlet NSButton *prevButton;
 @property IBOutlet NSButton *playPauseButton;
+@property (nonatomic, unsafe_unretained) IBOutlet Background *background;
 
 -(IBAction)nextTrack:(id)sender;
 -(IBAction)previousTrack:(id)sender;

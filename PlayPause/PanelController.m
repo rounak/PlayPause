@@ -8,6 +8,7 @@
 
 #import "PanelController.h"
 #import "iTunes.h"
+#import "Background.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface PanelController ()
@@ -31,6 +32,7 @@
 @synthesize nextButton = _nextButton;
 @synthesize prevButton = _prevButton;
 @synthesize playPauseButton = _playPauseButton;
+@synthesize background = _background;
 
 - (id)init
 {
@@ -59,16 +61,25 @@
 {
     NSLog(@"In window did load");
     NSView *contentView = self.window.contentView;
-    _albumArt = [[NSImageView alloc] initWithFrame:contentView.bounds];
+    
+    _albumArt = [[NSImageView alloc] initWithFrame:CGRectMake(contentView.frame.origin.x, contentView.frame.origin.y, contentView.frame.size.width - ARROW_HEIGHT, contentView.frame.size.height - ARROW_HEIGHT)];
     [self.window.contentView addSubview:_albumArt];
     
     NSPanel *panel = (id)self.window;
     [panel setAcceptsMouseMovedEvents:NO];
     [panel setLevel:NSPopUpMenuWindowLevel];
+    [panel setOpaque:NO];
+    [panel setBackgroundColor:[NSColor clearColor]];
     NSRect locationOfStatusItem = [[[NSApp currentEvent] window] frame];
+    
+    
     NSRect panelRect = [self.window frame];
-    panelRect.origin.x = locationOfStatusItem.origin.x - (panelRect.size.width/2) + 10.0;
-    panelRect.origin.y = locationOfStatusItem.origin.y - panelRect.size.height - 10.0;
+    panelRect.origin.x = locationOfStatusItem.origin.x - (panelRect.size.width/2) + 10;
+    panelRect.origin.y = locationOfStatusItem.origin.y - panelRect.size.height;
+    
+    NSLog(@"Before calling setArrowXVal");
+    [self.background setArrowXVal:(int)round(locationOfStatusItem.origin.x -panelRect.origin.x + 12)];
+    NSLog(@"After calling setArrowXVal");
     
     [self.window setFrame:panelRect display:YES];
     [super windowDidLoad];
@@ -101,6 +112,8 @@
 {
 //    NSLog(@"Awake form nib called");
     [super awakeFromNib];
+    
+    
     if (self.controlsView && controlBool == 0) {
         controlBool = 1;
         self.nextImage = [NSImage imageNamed:@"next.png"];
