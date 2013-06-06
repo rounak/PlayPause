@@ -35,7 +35,7 @@
         
     NSRect contentRect = NSInsetRect([self bounds], LINE_THICKNESS, LINE_THICKNESS);
     NSBezierPath *path = [NSBezierPath bezierPath];
-    NSLog(@"arrowX value is %li", _arrowX);
+//    NSLog(@"arrowX value is %li", _arrowX);
     
     
     [path moveToPoint:NSMakePoint(_arrowX, NSMaxY(contentRect))];
@@ -76,7 +76,7 @@
 - (void)setArrowXVal:(NSInteger)value
 {
     _arrowX = value;
-    NSLog(@"set arrowX called with %li",value);
+//    NSLog(@"set arrowX called with %li",value);
     [self setNeedsDisplay:YES];
 }
 
