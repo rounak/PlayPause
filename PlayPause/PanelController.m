@@ -71,18 +71,8 @@
     [panel setLevel:NSPopUpMenuWindowLevel];
     [panel setOpaque:NO];
     [panel setBackgroundColor:[NSColor clearColor]];
-    NSRect locationOfStatusItem = [[[NSApp currentEvent] window] frame];
     
-    
-    NSRect panelRect = [self.window frame];
-    panelRect.origin.x = locationOfStatusItem.origin.x - (panelRect.size.width/2) + 10;
-    panelRect.origin.y = locationOfStatusItem.origin.y - panelRect.size.height;
-    
-    NSLog(@"Before calling setArrowXVal");
-    [self.background setArrowXVal:(int)round(locationOfStatusItem.origin.x -panelRect.origin.x + 12)];
-    NSLog(@"After calling setArrowXVal");
-    
-    [self.window setFrame:panelRect display:YES];
+    [self updatePanelPosition];
     [super windowDidLoad];
     self.window.delegate = self;
     
@@ -150,6 +140,16 @@
     }
 }
 
+-(void)updatePanelPosition
+{
+    NSRect locationOfStatusItem = [[[NSApp currentEvent] window] frame];
+    NSRect panelRect = [self.window frame];
+    panelRect.origin.x = locationOfStatusItem.origin.x - (panelRect.size.width/2) + 10;
+    panelRect.origin.y = locationOfStatusItem.origin.y - panelRect.size.height;
+    [self.background setArrowXVal:(int)round(locationOfStatusItem.origin.x -panelRect.origin.x + 12)];
+    [self.window setFrame:panelRect display:YES];
+}
+
 -(IBAction)playToggle:(id)sender
 {
     [self.iTunesApp playpause];
@@ -192,7 +192,8 @@
     if (passedValue!=_hasActivePanel)
     {
         if (passedValue) {
-            
+            [self updateSongInfo];
+            [self updatePanelPosition];
             [self.window makeKeyAndOrderFront:nil];
             NSLog(@"Value is %d", [self.window canBecomeKeyWindow]);
         }
@@ -201,7 +202,6 @@
             [self.window orderOut:nil];
         }
         _hasActivePanel = passedValue;
-        [self updateSongInfo];
     }
     NSLog(@"Is window main?:%@",[self.window isMainWindow] ? @"YES":@"NO");
     NSLog(@"Is window key?:%@",[self.window isKeyWindow] ? @"YES":@"NO");
