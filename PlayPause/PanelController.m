@@ -245,4 +245,10 @@
     NSLog(@"The impossible happened, window became main");
 }
 
+- (void)sliderMoved:(id)sender
+{
+    double sliderValue = [_volumeSlider doubleValue];
+    _iTunesApp.soundVolume = (double)sliderValue;
+}
+
 @end
