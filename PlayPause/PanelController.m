@@ -203,6 +203,10 @@
         if (passedValue) {
             [self updateSongInfo];
             [self updatePanelPosition];
+            
+            //new code
+            NSApplication *thisApp = [NSApplication sharedApplication];
+            [thisApp activateIgnoringOtherApps:YES];
             [self.window makeKeyAndOrderFront:nil];
             NSLog(@"Value is %d", [self.window canBecomeKeyWindow]);
         }
@@ -250,5 +254,6 @@
     double sliderValue = [_volumeSlider doubleValue];
     _iTunesApp.soundVolume = (double)sliderValue;
 }
+
 
 @end
