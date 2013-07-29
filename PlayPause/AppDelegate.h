@@ -11,8 +11,11 @@
 
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+
 @property NSStatusItem *statusItem;
 @property (readonly) PanelController *panelController;
+
 - (IBAction)togglePanel:(id)sender;
+- (IBAction)exitApp:(id)sender;
 
 @end
