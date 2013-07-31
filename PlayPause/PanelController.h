@@ -29,13 +29,11 @@
 @property IBOutlet NSButton *nextButton;
 @property IBOutlet NSButton *prevButton;
 @property IBOutlet NSButton *playPauseButton;
-@property IBOutlet NSSlider *volumeSlider;
 @property (nonatomic, unsafe_unretained) IBOutlet Background *background;
 
 -(IBAction)nextTrack:(id)sender;
 -(IBAction)previousTrack:(id)sender;
 -(IBAction)playToggle:(id)sender;
--(IBAction)sliderMoved:(id)sender;
 - (id)init;
 @end
 
