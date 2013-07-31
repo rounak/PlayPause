@@ -20,6 +20,7 @@
 		12E6B63516A72D8E00D176FD /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6B63216A72D8E00D176FD /* PanelController.m */; };
 		12E6B63616A72D8E00D176FD /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63316A72D8E00D176FD /* Panel.xib */; };
 		12E6B63816A73ED700D176FD /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B63716A73AC500D176FD /* StatusHighlighted.png */; };
+		BF0BED2917A964940042FFDD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0BED2817A964940042FFDD /* icon.png */; };
 		BF1DDF8E175E311200E963D4 /* Background.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1DDF8D175E311200E963D4 /* Background.m */; };
 		BF31F1A617A2EE49005C2112 /* customView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF31F1A517A2EE49005C2112 /* customView.m */; };
 		BF613F59170CA9D000C2E1DB /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = BF613F57170CA9D000C2E1DB /* prev.png */; };
@@ -54,6 +55,7 @@
 		12E6B63216A72D8E00D176FD /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
 		12E6B63316A72D8E00D176FD /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
 		12E6B63716A73AC500D176FD /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+		BF0BED2817A964940042FFDD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		BF1DDF8C175E311200E963D4 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Background.h; sourceTree = "<group>"; };
 		BF1DDF8D175E311200E963D4 /* Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Background.m; sourceTree = "<group>"; };
 		BF31F1A417A2EE49005C2112 /* customView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customView.h; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				1249DF29164AFAB400B88147 /* Status.png */,
 				F971EFB2174CEC94008846DC /* Status@2x.png */,
 				12E6B63716A73AC500D176FD /* StatusHighlighted.png */,
+				BF0BED2817A964940042FFDD /* icon.png */,
 				1249DF0C164AE95100B88147 /* PlayPause-Info.plist */,
 				BFED900F170F24BB006E4ED5 /* pause.png */,
 				BFED9010170F24BB006E4ED5 /* play.png */,
@@ -234,6 +237,7 @@
 				BFED9011170F24BB006E4ED5 /* pause.png in Resources */,
 				BFED9012170F24BB006E4ED5 /* play.png in Resources */,
 				F97A50B9174BC22B00FE4EFF /* SongInfo.xib in Resources */,
+				BF0BED2917A964940042FFDD /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,7 @@
 @synthesize prevButton = _prevButton;
 @synthesize playPauseButton = _playPauseButton;
 @synthesize background = _background;
+@synthesize volumeSlider = _volumeSlider;
 
 - (id)init
 {
@@ -77,6 +78,10 @@
     self.window.delegate = self;
     
     [self updateSongInfo];
+    
+    //maximum and minimum volume
+    [_volumeSlider setMaxValue:(double)100.00];
+    [_volumeSlider setMinValue:(double)0.00];
     
     trackingArea = [[NSTrackingArea alloc] initWithRect:contentView.bounds options:(NSTrackingMouseEnteredAndExited | NSTrackingActiveInActiveApp) owner:self userInfo:nil];
     [contentView addTrackingArea:trackingArea];
@@ -187,6 +192,8 @@
     }
     [self updatePlayPauseIcon];
     
+    [_volumeSlider setDoubleValue:(double)_iTunesApp.soundVolume];
+//    NSLog(@"Updated lables");
 }
 
 -(void)setActivePanel:(BOOL)passedValue
@@ -242,6 +249,11 @@
     NSLog(@"The impossible happened, window became main");
 }
 
+- (void)sliderMoved:(id)sender
+{
+    double sliderValue = [_volumeSlider doubleValue];
+    _iTunesApp.soundVolume = (double)sliderValue;
+}
 
 
 @end
