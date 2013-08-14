@@ -37,7 +37,7 @@
 
 - (id)init
 {
-
+    
     self = [super initWithWindowNibName:@"Panel"];
     [NSBundle loadNibNamed:@"Controls" owner:self];
     [NSBundle loadNibNamed:@"SongInfo" owner:self];
@@ -103,7 +103,7 @@
 }
 -(void)awakeFromNib
 {
-//    NSLog(@"Awake form nib called");
+    //    NSLog(@"Awake form nib called");
     [super awakeFromNib];
     
     
@@ -173,20 +173,25 @@
 -(void)updateSongInfo
 {
     //Bring window to the front each time it is activated
-    [self.songLabel setStringValue:[self.iTunesApp currentTrack].name];
-    [self.artistLabel setStringValue:[self.iTunesApp currentTrack].artist];
-    iTunesArtwork *currentArtwork = [[self.iTunesApp currentTrack].artworks objectAtIndex:0];
-    if (currentArtwork) {
-        self.albumArt.image = nil;
-        [self.albumArt setImage:currentArtwork.data];
+    if (self.iTunesApp.playerState == iTunesEPlSStopped) {
+        [self.albumArt setImage:[NSImage imageNamed:@"Status"]];
     }
     else
     {
-        self.albumArt.image = nil;
-        [self.albumArt setImage:[NSImage imageNamed:@"Status"]];
+        [self.songLabel setStringValue:[self.iTunesApp currentTrack].name];
+        [self.artistLabel setStringValue:[self.iTunesApp currentTrack].artist];
+        iTunesArtwork *currentArtwork = [[self.iTunesApp currentTrack].artworks objectAtIndex:0];
+        if (currentArtwork && [currentArtwork.data isKindOfClass:[NSImage class]]) {
+            self.albumArt.image = nil;
+            [self.albumArt setImage:currentArtwork.data];
+        }
+        else
+        {
+            self.albumArt.image = nil;
+            [self.albumArt setImage:[NSImage imageNamed:@"Status"]];
+        }
     }
     [self updatePlayPauseIcon];
-    
 }
 
 -(void)setActivePanel:(BOOL)passedValue
@@ -241,7 +246,5 @@
 {
     NSLog(@"The impossible happened, window became main");
 }
-
-
 
 @end
