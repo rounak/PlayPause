@@ -12,7 +12,6 @@
 #import <QuartzCore/QuartzCore.h>
 
 #define BORDER_WIDTH 8
-#define LAYER_CORNER_RADIUS 4.0f //Refer to Background.m: should be CORNER_RADIUS/2
 
 @interface PanelController ()
 {

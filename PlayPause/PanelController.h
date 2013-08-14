@@ -8,7 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Background.h"
-
+#import "ControlsView.h"
+#import "SongInfoView.h"
 
 @interface PanelController : NSWindowController <NSWindowDelegate>
 {
@@ -20,8 +21,8 @@
 @property IBOutlet NSTextField *songLabel;
 @property IBOutlet NSTextField *artistLabel;
 @property IBOutlet NSImageView *albumArt;
-@property IBOutlet NSView *controlsView;
-@property IBOutlet NSView *songInfoView;
+@property IBOutlet ControlsView *controlsView;
+@property IBOutlet SongInfoView *songInfoView;
 @property IBOutlet NSImage *nextImage;
 @property IBOutlet NSImage *previousImage;
 @property IBOutlet NSImage *playImage;
