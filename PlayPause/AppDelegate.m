@@ -20,7 +20,7 @@
     
     //new code
     customView *view = [[customView alloc] init];
-    view.image = [NSImage imageNamed:@"Status"];
+    view.image = [NSImage imageNamed:@"statusItem"];
     [self.statusItem setView:view];
 
     //    view.target = self;
