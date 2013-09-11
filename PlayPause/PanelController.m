@@ -174,7 +174,7 @@
 {
     //Bring window to the front each time it is activated
     if (self.iTunesApp.playerState == iTunesEPlSStopped) {
-        [self.albumArt setImage:[NSImage imageNamed:@"Status"]];
+        [self.albumArt setImage:[NSImage imageNamed:@"defaultArt"]];
     }
     else
     {
@@ -188,7 +188,7 @@
         else
         {
             self.albumArt.image = nil;
-            [self.albumArt setImage:[NSImage imageNamed:@"Status"]];
+            [self.albumArt setImage:[NSImage imageNamed:@"defaultArt"]];
         }
     }
     [self updatePlayPauseIcon];
