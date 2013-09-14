@@ -8,13 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "PanelController.h"
-
+#import "customView.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property NSStatusItem *statusItem;
 @property (readonly) PanelController *panelController;
-
+@property customView *rightClickView;
 - (IBAction)togglePanel:(id)sender;
 - (IBAction)exitApp:(id)sender;
 

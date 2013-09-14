@@ -17,5 +17,6 @@
 @property (retain) NSImage *image;
 @property (assign) id target;
 @property (assign) SEL action, rightAction;
+-(void)changeImage:(NSImage*)passedImage;
 
 @end

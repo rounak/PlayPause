@@ -22,6 +22,8 @@
     
     AppDelegate *delegate = [NSApp delegate];
     [delegate togglePanel:self];
+//    self.image = !delegate.panelController.hasActivePanel ? [NSImage imageNamed:@"statusItem"] : [NSImage imageNamed:@"statusItemHighlighted"];
+//    [self setNeedsDisplay];
     
 //    [NSApp sendAction:self.action to:self.target from:self];
 
@@ -33,6 +35,11 @@
     [theMenu insertItemWithTitle:@"Exit" action:@selector(exitApp:) keyEquivalent:@"" atIndex:0];
     
     [NSMenu popUpContextMenu:theMenu withEvent:event forView:self];
+}
+-(void)changeImage:(NSImage*)passedImage
+{
+    self.image = passedImage;
+    [self setNeedsDisplay];
 }
 - (void)dealloc
 {

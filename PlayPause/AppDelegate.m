@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "customView.h"
 
 @implementation AppDelegate
 @synthesize panelController = _panelController;
@@ -19,9 +18,9 @@
     //self.statusItem.image = [NSImage imageNamed:@"Status"];
     
     //new code
-    customView *view = [[customView alloc] init];
-    view.image = [NSImage imageNamed:@"statusItem"];
-    [self.statusItem setView:view];
+    _rightClickView = [[customView alloc] init];
+    self.rightClickView.image = [NSImage imageNamed:@"statusItem"];
+    [self.statusItem setView:self.rightClickView];
 
     //    view.target = self;
     //    view.action = @selector(togglePanel:);

@@ -10,6 +10,7 @@
 #import "iTunes.h"
 #import "Background.h"
 #import <QuartzCore/QuartzCore.h>
+#import "AppDelegate.h"
 #define BORDER_WIDTH 8
 
 @interface PanelController ()
@@ -213,6 +214,8 @@
             [self.window orderOut:nil];
         }
         _hasActivePanel = passedValue;
+        AppDelegate *delegate = [NSApp delegate];
+        [delegate.rightClickView changeImage:(!_hasActivePanel ? [NSImage imageNamed:@"statusItem"] : [NSImage imageNamed:@"statusItemHighlighted"])];
     }
     NSLog(@"Is window main?:%@",[self.window isMainWindow] ? @"YES":@"NO");
     NSLog(@"Is window key?:%@",[self.window isKeyWindow] ? @"YES":@"NO");
