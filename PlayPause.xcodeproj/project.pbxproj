@@ -28,6 +28,7 @@
 		BFF2648917E0E74100B20B6B /* defaultArt.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF2648817E0E74100B20B6B /* defaultArt.png */; };
 		BFF2648B17E0E7E500B20B6B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF2648A17E0E7E500B20B6B /* icon.png */; };
 		F91ECC95174C14AF00105177 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91ECC94174C14AF00105177 /* QuartzCore.framework */; };
+		F97A3D2317E7AC6300D9EE29 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F97A3D2217E7AC6300D9EE29 /* icon.icns */; };
 		F97A50B6174B94DF00FE4EFF /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = F97A50B5174B94DF00FE4EFF /* Panel.m */; };
 		F97A50B9174BC22B00FE4EFF /* SongInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97A50B8174BC22B00FE4EFF /* SongInfo.xib */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		BFF2648817E0E74100B20B6B /* defaultArt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultArt.png; sourceTree = "<group>"; };
 		BFF2648A17E0E7E500B20B6B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F91ECC94174C14AF00105177 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F97A3D2217E7AC6300D9EE29 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
 		F97A50B4174B94DF00FE4EFF /* Panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panel.h; sourceTree = "<group>"; };
 		F97A50B5174B94DF00FE4EFF /* Panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
 		F97A50B8174BC22B00FE4EFF /* SongInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongInfo.xib; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		1249DF0B164AE95100B88147 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F97A3D2217E7AC6300D9EE29 /* icon.icns */,
 				12321C14165582D200A22459 /* iTunes.h */,
 				BF613F57170CA9D000C2E1DB /* prev.png */,
 				BFF2648817E0E74100B20B6B /* defaultArt.png */,
@@ -238,6 +241,7 @@
 				BFF2648717E0D78500B20B6B /* statusItemHighlighted.png in Resources */,
 				BFF2648917E0E74100B20B6B /* defaultArt.png in Resources */,
 				BFF2648B17E0E7E500B20B6B /* icon.png in Resources */,
+				F97A3D2317E7AC6300D9EE29 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
